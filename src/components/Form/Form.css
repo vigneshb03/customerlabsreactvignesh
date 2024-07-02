@@ -1,0 +1,19 @@
+.form-group{
+    margin-bottom: 15px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+.tune{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    outline: 2px solid blue;
+}
+.form-control{
+    width: 80%;
+    margin-left: 10px;
+}

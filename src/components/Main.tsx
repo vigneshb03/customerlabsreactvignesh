@@ -1,10 +1,11 @@
 import React from 'react'
 import '../App.css';
+import Segment from './Segment/Segment';
 const Main : React.FC= () => {
 
 
   return (
-    <div >
+    <div className='appcontainer'>
         {/* ---header--- */}
         <div className='header'>
           <button className='headerButton'>
@@ -16,6 +17,7 @@ const Main : React.FC= () => {
           <button className='saveSegmentButton'  data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
               Save Segment
           </button>
+          <span></span>
         </div>
         {/* Modal declaration */}
         <div className="offcanvas offcanvas-end" data-bs-scroll="true"  id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -28,10 +30,10 @@ const Main : React.FC= () => {
             </div>
           </div>
           <div className="offcanvas-body">
-            
+            <Segment />
           </div>
           <div className="offcanvas-footer">
-            <button className="ssb">
+            <button className="ssb" type='submit'>
                 Save the Segment
             </button>
             <button className='cancel'>Cancel</button>
