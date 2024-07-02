@@ -1,3 +1,13 @@
+:root {
+  --info: #39aebc; 
+  --green:  #41b494;
+  --lightgreen :#5ddb78 ;
+  --red:#d24774;
+  --grey:#999;
+  --darkgrey: #687d95;
+  --white:#f2fbf9;
+  --solwhite :#f4f6f6;
+}
 button{
   border-radius: 5px;
 }
@@ -15,7 +25,7 @@ button{
 }
 .header{
   height: 60px;
-  background-color: #39aebc;
+  background-color: var(--info);
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -31,8 +41,8 @@ button{
 
 }
 .saveSegmentButton{
-  border:2px solid #39aebc;
-  color: #39aebc;
+  border:2px solid var(--info);
+  color: var(--info);
   font-size: 23px;
   font-weight: 600;
   background-color: white;
@@ -46,7 +56,7 @@ button{
 }
 .ssb{
   color: #fff;
-  background-color: #41b494;
+  background-color: var(--info);
   font-size: 22px;
   font-weight: 500;
   margin: 0px 10px 0px 12px;
@@ -56,7 +66,7 @@ button{
 }
 .cancel{
   background-color: #fff;
-  color:#d24774 ;
+  color: var(--red);
   font-size: 22px;
   font-weight: 500;
   padding: 10px;
@@ -68,6 +78,6 @@ button{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: #f4f6f6;
+  background-color: var(--solwhite);
   height: 120px;
 }
