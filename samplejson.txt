@@ -1,0 +1,25 @@
+{
+  "segment_name": "",
+  "schema":
+    [
+      { "first_name" :"" },
+      { "last_name" :"" },
+      { "age" :"" },
+      { "account_name" :"" },
+      { "city" :"" },
+      { "state":"" }
+    ]
+}
+
+
+{
+  "colors":{
+    "#39aebc" : "Info"
+    "#41b494" : "green",
+    "#5ddb78" : "light green",
+    "#d24774" : "red",
+    "#999" : "grey",
+    "#687d95" : "barline",
+    "#f2fbf9" : outline
+  }
+}
