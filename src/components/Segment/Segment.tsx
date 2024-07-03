@@ -27,7 +27,8 @@ const Segment:React.FC<any> = () => {
     }))
   } 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='form'>
+    <div className="formSegment">
     <p>Enter the Name of the Segment</p>
     <div className="form-group">
       <input className='form-control' type="text" placeholder='Name of segment' name="segment_name" id="segment_name" onChange={(e)=>setSegmentName(e.target.value)}/>
@@ -58,13 +59,14 @@ const Segment:React.FC<any> = () => {
          <input className='form-control' type="text" name='state' placeholder='State' onChange={e=>setState(e.target.value)}/>
      </div>
      <button className='addSection' type='reset'>+Add new schema</button>
+     </div>
      <div className='saveButton'>
      <button className="ssb" type='submit'>
           Save the Segment
       </button>
       <button className='cancel'>Cancel</button>
       </div> 
-  </form>
+    </form>
   )
 
 }
