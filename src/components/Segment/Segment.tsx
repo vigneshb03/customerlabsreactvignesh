@@ -59,7 +59,7 @@ const Segment:React.FC<any> = () => {
      </div>
      <div className='form-group'>
          <span className='tune' style={{backgroundColor:'lightgrey'}}></span>
-         <input className='form-control' type="number" min={0} max={100} value={age} name='age' placeholder='Age' onChange={e=>setAge(e.target.value)}/>
+         <input className='form-control' type="number" name='age' min={0} max={100} value={age}  placeholder='Age' onChange={e=>setAge(e.target.value)}/>
          <i className='fa fa-chevron-down'></i>
      </div>
      <div className='form-group'>

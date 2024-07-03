@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import '../App.css';
 import Segment from './Segment/Segment';
 import { useSelector } from 'react-redux';
-import { json } from 'stream/consumers';
 // import axios from 'axios';
 const Main : React.FC= () => {
   const segment = useSelector((state:any)=>state.segment)
