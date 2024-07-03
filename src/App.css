@@ -39,17 +39,12 @@ button{
   justify-content: flex-start;
   align-items: center;
 }
-.saveSegment{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100px;
-  width: 100%;
-}
 .saveSegmentButton{
+  margin-left: 200px;
+  margin-top:80px;
   border:2px solid var(--info);
   color: var(--info);
-  font-size: 23px;
+  font-size: 24px;
   font-weight: 600;
   background-color: white;
 }
@@ -84,4 +79,8 @@ button{
   align-items: center;
   background-color: var(--solwhite);
   height: 100px;
+}
+.offcanvas-body{
+  padding: 0;
+  margin: 0;
 }

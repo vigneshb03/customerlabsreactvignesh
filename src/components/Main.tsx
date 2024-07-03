@@ -2,14 +2,14 @@ import React, { useEffect } from 'react'
 import '../App.css';
 import Segment from './Segment/Segment';
 import { useSelector } from 'react-redux';
-import axios from 'axios';
+import { json } from 'stream/consumers';
+// import axios from 'axios';
 const Main : React.FC= () => {
   const segment = useSelector((state:any)=>state.segment)
-
   useEffect(()=>{
     if(segment.length>0){
       // axios.post("https://webhook.site/337ccc99-befd-4c5a-84e0-fa0b865d3201",segment).then(res=>{
-        console.log('Addedd Successfully------>');
+        alert(`${JSON.stringify(segment)}`);
       // })
     }
   })
@@ -27,7 +27,6 @@ const Main : React.FC= () => {
           <button className='saveSegmentButton'  data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
               Save Segment
           </button>
-          <span></span>
         </div>
         {/* Modal declaration */}
         <div className="offcanvas offcanvas-end" data-bs-scroll="true"  id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
