@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../App.css';
 import Segment from './Segment/Segment';
 import { useSelector } from 'react-redux';
+import axios from 'axios';
 
 const Main : React.FC= () => {
 
   const segment = useSelector((state:any)=>state.segment);
-  console.log('segment',segment);
+  useEffect(()=>{
+    if(segment.length>0){
+      axios.post("https://webhook.site/337ccc99-befd-4c5a-84e0-fa0b865d3201",segment).then(res=>{
+        console.log(res);
+      })
+      console.log(segment);
+    }
+    
+  })
 
   return (
     <div className='appcontainer'>
