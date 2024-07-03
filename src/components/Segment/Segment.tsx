@@ -49,32 +49,32 @@ const Segment:React.FC<any> = () => {
     <p style={{marginTop:'20px'}}>To Save your segment ,you need to add the schemas to build the query</p>
     <div className='form-group'>
           <span className='tune'></span>
-          <input className='form-control' type="text" name='first_name' value={firstName} placeholder='First Name' onChange={e=>setFirstName(e.target.value)}/>
+          <input className='form-control' type="text" name='first_name' value={firstName} placeholder='Enter First Name' onChange={e=>setFirstName(e.target.value)}/>
           <i className='fa fa-chevron-down'></i>
      </div>
      <div className='form-group'>
           <span className='tune' style={{backgroundColor:'lightgreen'}}></span>
-          <input className='form-control' type="text" name='last_name' value={lastName} placeholder='Last Name' onChange={e=>setLastName(e.target.value)}/>
+          <input className='form-control' type="text" name='last_name' value={lastName} placeholder='Enter Last Name' onChange={e=>setLastName(e.target.value)}/>
           <i className='fa fa-chevron-down'></i>
      </div>
      <div className='form-group'>
          <span className='tune' style={{backgroundColor:'lightgrey'}}></span>
-         <input className='form-control' type="number" name='age' min={0} max={100} value={age}  placeholder='Age' onChange={e=>setAge(e.target.value)}/>
+         <input className='form-control' type="number" min={0} max={100} value={age} name='age' placeholder='Enter Age' onChange={e=>setAge(e.target.value)}/>
          <i className='fa fa-chevron-down'></i>
      </div>
      <div className='form-group'>
          <span className='tune' style={{backgroundColor:'violet'}}></span>
-         <input className='form-control' type="text" name='account_name' value={account} placeholder='Account Name' onChange={e=>setAccount(e.target.value)}/>
+         <input className='form-control' type="text" name='account_name' value={account} placeholder='Enter Account Name' onChange={e=>setAccount(e.target.value)}/>
          <i className='fa fa-chevron-down'></i>
      </div>
      <div className='form-group'>
          <span className='tune' style={{backgroundColor:'yellow'}}></span>
-         <input className='form-control' type="text" name='city' value={city} placeholder='City' onChange={e=>setCity(e.target.value)}/>
+         <input className='form-control' type="text" name='city' value={city} placeholder='Enter City' onChange={e=>setCity(e.target.value)}/>
          <i className='fa fa-chevron-down'></i>
      </div>
      <div className='form-group'>
          <span className='tune' style={{backgroundColor:'orange'}}></span>
-         <input className='form-control' type="text" name='state' value={state} placeholder='State' onChange={e=>setState(e.target.value)}/>
+         <input className='form-control' type="text" name='state' value={state} placeholder='Enter State' onChange={e=>setState(e.target.value)}/>
          <i className='fa fa-chevron-down'></i>
      </div>
      <button className='addSection' type='reset' onClick={resetform}>+Add new schema</button>
