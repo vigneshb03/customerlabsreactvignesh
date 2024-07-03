@@ -1,8 +1,12 @@
 import React from 'react'
 import '../App.css';
 import Segment from './Segment/Segment';
+import { useSelector } from 'react-redux';
+
 const Main : React.FC= () => {
 
+  const segment = useSelector((state:any)=>state.segment);
+  console.log('segment',segment);
 
   return (
     <div className='appcontainer'>
@@ -31,12 +35,6 @@ const Main : React.FC= () => {
           </div>
           <div className="offcanvas-body">
             <Segment />
-          </div>
-          <div className="offcanvas-footer">
-            <button className="ssb" type='submit'>
-                Save the Segment
-            </button>
-            <button className='cancel'>Cancel</button>
           </div>
         </div>
     </div>
