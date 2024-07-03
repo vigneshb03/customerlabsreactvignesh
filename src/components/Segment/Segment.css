@@ -19,10 +19,9 @@
   border-radius: 50%;
   background-color: red;
   position: relative;
-  outline: 2px solid blue;
 }
 .form-control{
-  width: 80%;
+  width: 90%;
   margin-left: 10px;
 }
 .saveButton{
